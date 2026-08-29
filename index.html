@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EU Travel Agent for Nigerians</title>
+    <meta
+      name="description"
+      content="Travel planning assistant for Nigerians preparing to visit the EU."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">✈️</span>
+          <span>Schengen Trip Planner</span>
+        </div>
+        <nav class="nav-links">
+          <a href="#planner">Planner</a>
+          <a href="#checklist">Checklist</a>
+          <a href="#insights">Insights</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Built for Nigerian travelers</p>
+            <h1>Plan a smoother EU trip from Nigeria.</h1>
+            <p class="lead">
+              Get a personalized Schengen-ready plan, visa guidance, travel budget,
+              document checklist, and more before you fly.
+            </p>
+            <div class="hero-pills">
+              <span>Visa prep</span>
+              <span>Budgeting</span>
+              <span>Flights</span>
+              <span>Insurance</span>
+            </div>
+          </div>
+
+          <div class="hero-card card" id="planner">
+            <h2>Travel assistant</h2>
+            <form id="travelForm">
+              <div class="field-grid">
+                <label>
+                  Leaving from
+                  <select id="origin">
+                    <option value="Lagos">Lagos</option>
+                    <option value="Abuja">Abuja</option>
+                    <option value="Port Harcourt">Port Harcourt</option>
+                    <option value="Kano">Kano</option>
+                  </select>
+                </label>
+
+                <label>
+                  Destination
+                  <select id="destination">
+                    <option value="Paris">Paris, France</option>
+                    <option value="Berlin">Berlin, Germany</option>
+                    <option value="Amsterdam">Amsterdam, Netherlands</option>
+                    <option value="Madrid">Madrid, Spain</option>
+                    <option value="Lisbon">Lisbon, Portugal</option>
+                    <option value="Rome">Rome, Italy</option>
+                  </select>
+                </label>
+
+                <label>
+                  Travel month
+                  <select id="month">
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November">November</option>
+                    <option value="December">December</option>
+                  </select>
+                </label>
+
+                <label>
+                  Purpose
+                  <select id="purpose">
+                    <option value="Tourism">Tourism</option>
+                    <option value="Business">Business</option>
+                    <option value="Study">Study</option>
+                    <option value="Family visit">Family visit</option>
+                  </select>
+                </label>
+
+                <label>
+                  Budget (₦)
+                  <input id="budget" type="number" min="200000" value="3500000" />
+                </label>
+
+                <label>
+                  Number of travelers
+                  <input id="travelers" type="number" min="1" max="6" value="2" />
+                </label>
+              </div>
+
+              <div class="visa-row">
+                <label>
+                  Visa status
+                  <select id="visaStatus">
+                    <option value="na">Not applied</option>
+                    <option value="planning">Planning</option>
+                    <option value="approved">Approved</option>
+                    <option value="pending">Pending</option>
+                  </select>
+                </label>
+              </div>
+
+              <button type="submit">Generate plan</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="results container" id="insights">
+        <div class="card summary-card">
+          <h3>Trip outlook</h3>
+          <div id="tripSummary" class="summary-copy"></div>
+        </div>
+
+        <div class="stat-grid">
+          <div class="card stat">
+            <span class="label">Estimated airfare</span>
+            <strong id="flightCost">₦0</strong>
+          </div>
+          <div class="card stat">
+            <span class="label">Stay estimate</span>
+            <strong id="stayCost">₦0</strong>
+          </div>
+          <div class="card stat">
+            <span class="label">Daily budget</span>
+            <strong id="dailyBudget">₦0</strong>
+          </div>
+          <div class="card stat">
+            <span class="label">Visa readiness</span>
+            <strong id="visaReadiness">-</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="container split-grid" id="checklist">
+        <div class="card">
+          <h3>Recommended checklist</h3>
+          <ul id="checklistList" class="checklist"></ul>
+        </div>
+
+        <div class="card itinerary-card">
+          <h3>Suggested itinerary</h3>
+          <div id="itinerary" class="itinerary"></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
