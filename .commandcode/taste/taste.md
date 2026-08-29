@@ -1,0 +1,2 @@
+- Prefers business documents and plans delivered as Microsoft Word (.docx) files. Confidence: 0.8
+- Prefers the agent to read/inspect files in the project folder to gather context before producing a deliverable. Confidence: 0.7
