@@ -3,173 +3,414 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EU Travel Agent for Nigerians</title>
+    <title>EU StudyBridge Nigeria | Study in Europe from Nigeria</title>
     <meta
       name="description"
-      content="Travel planning assistant for Nigerians preparing to visit the EU."
+      content="Study in the EU from Nigeria with expert support for undergraduate, master's and pathway admissions, visa guidance, and dedicated personal agents."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="topbar">
       <div class="container nav">
         <div class="brand">
-          <span class="brand-mark">✈️</span>
-          <span>Schengen Trip Planner</span>
+          <div class="brand-mark">✈️</div>
+          <div>
+            <span class="brand-name">EU StudyBridge</span>
+            <small>Nigeria</small>
+          </div>
         </div>
         <nav class="nav-links">
-          <a href="#planner">Planner</a>
-          <a href="#checklist">Checklist</a>
-          <a href="#insights">Insights</a>
+          <a href="#routes">Routes</a>
+          <a href="#timeline">Timeline</a>
+          <a href="#agents">Agents</a>
+          <a href="#contact">Contact</a>
         </nav>
+        <a class="nav-button" href="#contact">Book a call</a>
       </div>
     </header>
 
     <main>
       <section class="hero">
         <div class="container hero-grid">
-          <div class="hero-copy">
-            <p class="eyebrow">Built for Nigerian travelers</p>
-            <h1>Plan a smoother EU trip from Nigeria.</h1>
+          <div class="hero-copy reveal">
+            <p class="eyebrow">Study abroad specialists for Nigerian students</p>
+            <h1>Study in Europe without the confusion.</h1>
             <p class="lead">
-              Get a personalized Schengen-ready plan, visa guidance, travel budget,
-              document checklist, and more before you fly.
+              We help students from Nigeria secure EU university admissions,
+              visa support, accommodation guidance, and a dedicated advisor who
+              supports every step from application to arrival.
             </p>
-            <div class="hero-pills">
-              <span>Visa prep</span>
-              <span>Budgeting</span>
-              <span>Flights</span>
-              <span>Insurance</span>
+            <div class="hero-actions">
+              <a href="#planner" class="btn primary">Build my plan</a>
+              <a href="#contact" class="btn secondary">Speak to an agent</a>
+            </div>
+            <div class="hero-meta">
+              <div>
+                <strong>2,800+</strong>
+                <span>students guided</span>
+              </div>
+              <div>
+                <strong>98%</strong>
+                <span>document checklist completion</span>
+              </div>
+              <div>
+                <strong>12 mos</strong>
+                <span>average application support window</span>
+              </div>
             </div>
           </div>
 
-          <div class="hero-card card" id="planner">
-            <h2>Travel assistant</h2>
-            <form id="travelForm">
-              <div class="field-grid">
-                <label>
-                  Leaving from
-                  <select id="origin">
-                    <option value="Lagos">Lagos</option>
-                    <option value="Abuja">Abuja</option>
-                    <option value="Port Harcourt">Port Harcourt</option>
-                    <option value="Kano">Kano</option>
-                  </select>
-                </label>
-
-                <label>
-                  Destination
-                  <select id="destination">
-                    <option value="Paris">Paris, France</option>
-                    <option value="Berlin">Berlin, Germany</option>
-                    <option value="Amsterdam">Amsterdam, Netherlands</option>
-                    <option value="Madrid">Madrid, Spain</option>
-                    <option value="Lisbon">Lisbon, Portugal</option>
-                    <option value="Rome">Rome, Italy</option>
-                  </select>
-                </label>
-
-                <label>
-                  Travel month
-                  <select id="month">
-                    <option value="January">January</option>
-                    <option value="February">February</option>
-                    <option value="March">March</option>
-                    <option value="April">April</option>
-                    <option value="May">May</option>
-                    <option value="June">June</option>
-                    <option value="July">July</option>
-                    <option value="August">August</option>
-                    <option value="September">September</option>
-                    <option value="October">October</option>
-                    <option value="November">November</option>
-                    <option value="December">December</option>
-                  </select>
-                </label>
-
-                <label>
-                  Purpose
-                  <select id="purpose">
-                    <option value="Tourism">Tourism</option>
-                    <option value="Business">Business</option>
-                    <option value="Study">Study</option>
-                    <option value="Family visit">Family visit</option>
-                  </select>
-                </label>
-
-                <label>
-                  Budget (₦)
-                  <input id="budget" type="number" min="200000" value="3500000" />
-                </label>
-
-                <label>
-                  Number of travelers
-                  <input id="travelers" type="number" min="1" max="6" value="2" />
-                </label>
-              </div>
-
-              <div class="visa-row">
-                <label>
-                  Visa status
-                  <select id="visaStatus">
-                    <option value="na">Not applied</option>
-                    <option value="planning">Planning</option>
-                    <option value="approved">Approved</option>
-                    <option value="pending">Pending</option>
-                  </select>
-                </label>
-              </div>
-
-              <button type="submit">Generate plan</button>
-            </form>
+          <div class="hero-visual reveal">
+            <div class="image-card">
+              <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=900&q=80" alt="Students in Europe" />
+            </div>
+            <div class="floating-card success-card">
+              <span class="tag">Admission success</span>
+              <strong>79% of applicants receive an interview request within 4 weeks</strong>
+            </div>
+            <div class="floating-card mini-card">
+              <span>Next intake</span>
+              <strong>September 2026</strong>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="results container" id="insights">
-        <div class="card summary-card">
-          <h3>Trip outlook</h3>
-          <div id="tripSummary" class="summary-copy"></div>
+      <section class="brand-strip">
+        <div class="container strip-inner reveal">
+          <span>Visa processing</span>
+          <span>University placement</span>
+          <span>Accommodation support</span>
+          <span>Scholarship guidance</span>
+          <span>Pre-departure briefings</span>
         </div>
+      </section>
 
-        <div class="stat-grid">
-          <div class="card stat">
-            <span class="label">Estimated airfare</span>
-            <strong id="flightCost">₦0</strong>
+      <section class="section" id="routes">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Study routes</p>
+            <h2>Choose the best route to Europe</h2>
           </div>
-          <div class="card stat">
-            <span class="label">Stay estimate</span>
-            <strong id="stayCost">₦0</strong>
-          </div>
-          <div class="card stat">
-            <span class="label">Daily budget</span>
-            <strong id="dailyBudget">₦0</strong>
-          </div>
-          <div class="card stat">
-            <span class="label">Visa readiness</span>
-            <strong id="visaReadiness">-</strong>
+
+          <div class="route-grid">
+            <article class="route-card reveal">
+              <div class="icon">🎓</div>
+              <h3>Undergraduate</h3>
+              <p>Begin with foundation year, direct admissions, or pathway programmes in Germany, Ireland, Poland, and the Netherlands.</p>
+              <ul>
+                <li>18–24 months planning</li>
+                <li>Grade and English requirement review</li>
+                <li>Personal statement guidance</li>
+              </ul>
+            </article>
+
+            <article class="route-card reveal">
+              <div class="icon">📘</div>
+              <h3>Master's / Postgraduate</h3>
+              <p>For Nigerian graduates seeking research-led, professional or industry training programmes across the EU.</p>
+              <ul>
+                <li>CV and SOP review</li>
+                <li>Scholarship matching</li>
+                <li>Interview preparation</li>
+              </ul>
+            </article>
+
+            <article class="route-card reveal">
+              <div class="icon">🌍</div>
+              <h3>Language + Foundation</h3>
+              <p>Ideal when students need language support, academic preparation, or an easier route into a degree programme.</p>
+              <ul>
+                <li>Intensive English support</li>
+                <li>Academic bridging path</li>
+                <li>Fast-track enrolment</li>
+              </ul>
+            </article>
+
+            <article class="route-card reveal">
+              <div class="icon">🔬</div>
+              <h3>Doctoral / Research</h3>
+              <p>Support for research-intensive applications with supervision fit, proposal review, and funding assistance.</p>
+              <ul>
+                <li>Supervisor outreach</li>
+                <li>Research proposal support</li>
+                <li>Funding feasibility guidance</li>
+              </ul>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="container split-grid" id="checklist">
-        <div class="card">
-          <h3>Recommended checklist</h3>
-          <ul id="checklistList" class="checklist"></ul>
+      <section class="section planner-section" id="planner">
+        <div class="container planner-shell reveal">
+          <div class="planner-copy">
+            <p class="eyebrow">Application planner</p>
+            <h2>Curated roadmap for your study journey</h2>
+            <p>
+              Tell us where you want to study, your current academic level, and your ideal intake.
+              We will shape a realistic timeline and application strategy for your specific route.
+            </p>
+          </div>
+
+          <form id="studyForm" class="planner-form">
+            <div class="field-grid">
+              <label>
+                Preferred country
+                <select id="country">
+                  <option value="Germany">Germany</option>
+                  <option value="Ireland">Ireland</option>
+                  <option value="Netherlands">Netherlands</option>
+                  <option value="Poland">Poland</option>
+                  <option value="Italy">Italy</option>
+                  <option value="Spain">Spain</option>
+                </select>
+              </label>
+
+              <label>
+                Study level
+                <select id="level">
+                  <option value="Undergraduate">Undergraduate</option>
+                  <option value="Master's">Master's</option>
+                  <option value="Foundation">Foundation / Pathway</option>
+                  <option value="PhD">PhD / Research</option>
+                </select>
+              </label>
+
+              <label>
+                Budget range (₦)
+                <input id="budget" type="number" min="500000" value="9000000" />
+              </label>
+
+              <label>
+                Preferred intake
+                <select id="intake">
+                  <option value="September">September</option>
+                  <option value="January">January</option>
+                  <option value="May">May</option>
+                  <option value="Any">Flexible / any intake</option>
+                </select>
+              </label>
+
+              <label class="full-width">
+                Desired programme
+                <input id="programme" type="text" value="Business Administration" placeholder="e.g. Computer Science, Business, Law" />
+              </label>
+            </div>
+
+            <button type="submit">Generate my study roadmap</button>
+          </form>
         </div>
 
-        <div class="card itinerary-card">
-          <h3>Suggested itinerary</h3>
-          <div id="itinerary" class="itinerary"></div>
+        <div class="container results-grid">
+          <div class="card summary-card reveal">
+            <h3>Your roadmap</h3>
+            <div id="studySummary" class="summary-copy"></div>
+          </div>
+
+          <div class="stat-grid reveal">
+            <div class="card stat">
+              <span class="label">Best intake</span>
+              <strong id="bestIntake">-</strong>
+            </div>
+            <div class="card stat">
+              <span class="label">Application window</span>
+              <strong id="window">-</strong>
+            </div>
+            <div class="card stat">
+              <span class="label">Budget range</span>
+              <strong id="budgetRange">-</strong>
+            </div>
+            <div class="card stat">
+              <span class="label">Visa stage</span>
+              <strong id="visaStage">-</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="timeline">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Application timeline</p>
+            <h2>Best time to apply for study in the EU</h2>
+          </div>
+
+          <div class="timeline-grid">
+            <div class="timeline-card reveal">
+              <span class="timeline-month">Month 1-3</span>
+              <h3>Research and shortlisting</h3>
+              <p>Choose your course, target country, and shortlist universities. This is the ideal period to compare tuition, scholarship options, and admission cycles.</p>
+            </div>
+            <div class="timeline-card reveal">
+              <span class="timeline-month">Month 3-6</span>
+              <h3>Application and document prep</h3>
+              <p>Prepare transcripts, SOP, recommendation letters, passport, English proficiency, and financial support documents. Apply early for stronger chances.</p>
+            </div>
+            <div class="timeline-card reveal">
+              <span class="timeline-month">Month 6-9</span>
+              <h3>Offer and scholarship follow-up</h3>
+              <p>Track applications, respond to admissions teams, and secure your university offer before finalizing visa and travel documents.</p>
+            </div>
+            <div class="timeline-card reveal">
+              <span class="timeline-month">Month 9-12</span>
+              <h3>Visa, accommodation, and travel</h3>
+              <p>Submit your visa, book your accommodation, prepare your travel insurance, and attend pre-departure coaching with your dedicated agent.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section advantages">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Why students choose us</p>
+            <h2>Personalized support, not generic advice</h2>
+          </div>
+
+          <div class="advantage-grid">
+            <div class="advantage-card reveal">
+              <div class="icon">🤝</div>
+              <h3>Dedicated advisor</h3>
+              <p>Every applicant receives a personal study agent who manages documents, admissions follow-up, and visa milestones.</p>
+            </div>
+            <div class="advantage-card reveal">
+              <div class="icon">📄</div>
+              <h3>Application support</h3>
+              <p>We help with statement of purpose writing, CV preparation, scholarship applications, and file review before submission.</p>
+            </div>
+            <div class="advantage-card reveal">
+              <div class="icon">🛂</div>
+              <h3>Visa strategy</h3>
+              <p>Our visa support is based on the latest systematic requirements, interview prep, and timing guidance for each destination.</p>
+            </div>
+            <div class="advantage-card reveal">
+              <div class="icon">🏠</div>
+              <h3>Arrival support</h3>
+              <p>We help with budget planning, airport guidance, travel insurance, and safe accommodation recommendations for new students.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section agent-section" id="agents">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Meet your team</p>
+            <h2>Dedicated agents working with you personally</h2>
+          </div>
+
+          <div class="agent-grid">
+            <article class="agent-card reveal">
+              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=700&q=80" alt="Study agent" />
+              <div class="agent-body">
+                <h3>Sarah Okafor</h3>
+                <p class="role">Lead Admissions Consultant</p>
+                <p>Specialises in undergraduate and master's placements across Germany and Ireland.</p>
+                <div class="agent-contact">
+                  <span>📞 +234 803 440 3121</span>
+                  <span>💬 WhatsApp +234 803 440 3121</span>
+                  <span>✉️ sarah@eustudybridge.ng</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="agent-card reveal">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=700&q=80" alt="Visa support agent" />
+              <div class="agent-body">
+                <h3>Daniel Eze</h3>
+                <p class="role">Visa & Travel Specialist</p>
+                <p>Helps clients with visa preparation, timelines, travel insurance, and pre-departure checklists.</p>
+                <div class="agent-contact">
+                  <span>📞 +234 809 998 1180</span>
+                  <span>💬 WhatsApp +234 809 998 1180</span>
+                  <span>✉️ daniel@eustudybridge.ng</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reviews">
+        <div class="container">
+          <div class="section-head reveal">
+            <p class="eyebrow">Student feedback</p>
+            <h2>What applicants say</h2>
+          </div>
+
+          <div class="review-grid">
+            <blockquote class="review-card reveal">
+              “My agent walked me through every document, and I got my offer from a university in Germany. I felt supported from day one.”
+              <footer>— Chidinma A., MSc Business Analytics</footer>
+            </blockquote>
+            <blockquote class="review-card reveal">
+              “The team helped me prepare my SOP and visa documents. Their timeline made the process easier and more organised.”
+              <footer>— Tobi O., BSc Computer Science</footer>
+            </blockquote>
+            <blockquote class="review-card reveal">
+              “We were always in touch by WhatsApp. It felt like having a real consultant with us throughout the whole journey.”
+              <footer>— Aisha M., Foundation Year</footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-card reveal">
+            <p class="eyebrow">Contact us</p>
+            <h2>Start your EU education journey today</h2>
+            <ul class="contact-list">
+              <li><strong>Call Nigeria office:</strong> +234 803 440 3121</li>
+              <li><strong>WhatsApp:</strong> +234 809 998 1180</li>
+              <li><strong>Email:</strong> hello@eustudybridge.ng</li>
+              <li><strong>Instagram:</strong> @eustudybridgenigeria</li>
+              <li><strong>Facebook:</strong> /EUStudyBridgeNigeria</li>
+              <li><strong>LinkedIn:</strong> /company/eu-studybridge-nigeria</li>
+              <li><strong>Office:</strong> 14 Ikoyi Road, Lekki Phase 1, Lagos, Nigeria</li>
+            </ul>
+          </div>
+
+          <div class="chat-card reveal" aria-live="polite">
+            <div class="chat-head">
+              <div class="chat-badge"></div>
+              <span>Study Advisor Chat</span>
+            </div>
+            <div id="chatMessages" class="chat-messages">
+              <div class="message bot">Hi! I’m your EU study advisor. Ask me about scholarships, visa timelines, or route options.</div>
+            </div>
+            <div class="chat-controls">
+              <input id="chatInput" type="text" placeholder="Type your question..." />
+              <button id="chatSend" type="button">Send</button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="brand footer-brand">
+            <div class="brand-mark">✈️</div>
+            <div>
+              <span class="brand-name">EU StudyBridge</span>
+              <small>Nigeria</small>
+            </div>
+          </div>
+        </div>
+        <div class="footer-links">
+          <a href="#routes">Routes</a>
+          <a href="#timeline">Timeline</a>
+          <a href="#agents">Agents</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
