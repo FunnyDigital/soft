@@ -363,12 +363,24 @@ button {
 .icon {
   display: grid;
   place-items: center;
-  width: 54px;
-  height: 54px;
-  border-radius: 16px;
-  background: linear-gradient(135deg, rgba(16, 58, 192, 0.12), rgba(17, 165, 106, 0.1));
-  font-size: 1.6rem;
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(16, 58, 192, 0.12), rgba(17, 165, 106, 0.12));
+  border: 1px solid rgba(16, 58, 192, 0.08);
+  color: var(--primary-dark);
   margin-bottom: 18px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.icon svg {
+  width: 28px;
+  height: 28px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .route-card h3,
@@ -557,10 +569,28 @@ select:focus {
 .agent-contact {
   margin-top: 18px;
   display: grid;
-  gap: 8px;
+  gap: 10px;
   color: var(--secondary);
   font-weight: 600;
   font-size: 0.95rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  line-height: 1.5;
+}
+
+.contact-item svg {
+  width: 18px;
+  height: 18px;
+  stroke: var(--primary);
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
 }
 
 .review-grid {
